@@ -19,22 +19,21 @@ class B{
 		int c;
 };
 
-void testA(int(*Callback)(int a,int b)){
+void testA(int* Callback(int a,int b)){
 	Callback(1,2);
 };
 
 
-int bba(int a,int b){
+int* bba(int a,int b){
 	cout << a+b << endl;
 };
 
 
 int main(){
 	int (*fefe)(int a,int b)=bba;
-
 	Test t;
 	t.go();
-	testA(fefe);
+	testA(bba);
 	return -1;
 };
 

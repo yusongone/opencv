@@ -33,6 +33,5 @@ int main(){
 	b.go();
 
 	
-	
 return -1;
 };
